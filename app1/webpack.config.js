@@ -13,10 +13,7 @@ module.exports = {
     devServer: {
         static: path.resolve(__dirname, 'public'),
         hot: true,
-        port: 8080,
-        headers: {
-            'Access-Control-Allow-Origin': '*', // Allow cross-origin requests
-        },
+        port: 8080
     },
     module: {
         rules: [
