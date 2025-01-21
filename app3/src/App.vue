@@ -14,8 +14,11 @@ export default {
     };
   },
   async mounted() {
-    const remote = await import("app2/App");
+
+    const remote = await import("app4/App");
     this.RemoteComponent = remote.default;
+
+
   },
 }
 </script>
