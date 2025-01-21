@@ -35,27 +35,17 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin(),
+        /*
         new MF({
             name: "app3",
             filename: "remoteEntry.js",
             remotes: {
                 "app4": "app4@http://localhost:8081/remoteEntry.js"
             },
-            shared: {
-                /*
-                "react": {
-                    singleton: true,
-                    requiredVersion: "16",
-                    strictVersion: true
-                },
-                "react-dom": {
-                    singleton: false,
-                }
-                 */
-            },
             exposes: {
                 "./App": "./src/App"
             }
         })
+        */
     ],
 };

@@ -6,6 +6,9 @@
 </template>
 
 <script>
+import {loadModule} from "./loadModules"
+import {registerRemotess} from "./registerRemotes";
+
 export default {
   name: 'App',
   data() {
@@ -14,11 +17,11 @@ export default {
     };
   },
   async mounted() {
-
-    const remote = await import("app4/App");
-    this.RemoteComponent = remote.default;
-
-
+      await registerRemotess()
+      loadModule('app4', './App').then(
+          remote => {
+            this.RemoteComponent = remote.default
+      })
   },
 }
 </script>

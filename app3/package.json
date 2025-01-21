@@ -10,10 +10,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "module-federation-runtime": "^1.2.4",
     "vue": "^2.6.10"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
+    "mf-webpack4": "git+ssh://git@github.com:module-federation/webpack-4.git",
     "vue": "^2.6.10",
     "vue-analytics": "^5.12.2",
     "vue-apexcharts": "^1.5.3",
@@ -40,7 +42,6 @@
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0",
     "webpack": "^4.41.2",
-    "mf-webpack4": "git+ssh://git@github.com:module-federation/webpack-4.git",
     "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
